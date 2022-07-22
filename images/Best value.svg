@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="188.018" height="76.383" viewBox="0 0 188.018 76.383">
+  <defs>
+    <filter id="Path_6" x="0" y="0" width="188.018" height="76.383" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Best_value" data-name="Best value" transform="translate(12 7)">
+    <g transform="matrix(1, 0, 0, 1, -12, -7)" filter="url(#Path_6)">
+      <path id="Path_6-2" data-name="Path 6" d="M0,0H164.018l-25.97,24.853,25.97,27.53H0Z" transform="translate(12 7)" fill="#4c8bf5"/>
+    </g>
+    <text id="Best_Value-2" data-name="Best Value" transform="translate(69 33)" fill="#fff" font-size="20" font-family="Inter" font-weight="500"><tspan x="-50" y="0">Best Value</tspan></text>
+  </g>
+</svg>
