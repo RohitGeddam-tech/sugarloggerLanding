@@ -1321,3 +1321,58 @@ textarea {
     padding-top: 30px;
   }
 }
+
+@media(min-width:1550px){
+  h1{
+    font-size: 60px;
+    line-height: 72px;
+  }
+  p{
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .container{
+    max-width: 1340px;
+  }
+  .steps{
+    max-width: 1100px;
+  }
+  .step1Body, .step2Body, .step3Body{
+    max-width: 1160px;
+  }
+  .btn, .banner .buttonBox > .btn.noBg{
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .upgrade img{
+    max-width: 1260px;
+  }
+  .btn{
+    max-width: 430px;
+  }
+  .banner .buttonBox{
+    max-width: 870px;
+  }
+  .upgrade .buttonBox{
+    max-width: 820px;
+  }
+  .banner .buttonBox > .btn.noBg{
+    max-width: 370px;
+  }
+  .upgrade a,.header a{
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .choose>.container{
+    max-width: 1500px;
+  }
+  .chooseBox{
+    max-width: 410px;
+  }
+  .startBox{
+    max-width: 1360px;
+  }
+  .startLeft,.startRight{
+    max-width: 600px;
+  }
+}
