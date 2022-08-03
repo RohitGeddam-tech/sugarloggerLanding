@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 /* * {
   font: normal normal Inter;
@@ -34,8 +34,8 @@ h1 {
 
 p {
   font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
+  font-weight: 400;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -47,7 +47,7 @@ p {
   cursor: pointer;
   color: #ffffff;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 29px;
   border-radius: 4px;
   display: flex;
@@ -86,7 +86,7 @@ p {
   outline: none;
   background-color: transparent;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 26px;
   cursor: pointer;
   color: #4c8bf5;
@@ -116,14 +116,19 @@ p {
 }
 
 .header img {
+  width: 164px;
+  height: 44px;
+}
+
+/* .header img {
   width: 221px;
   height: 50px;
-}
+} */
 
 .header a {
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 36px;
   letter-spacing: 0px;
   color: #888888;
   text-decoration: underline #4c8bf5;
@@ -458,7 +463,7 @@ p {
 
 .upgrade a {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 36px;
   letter-spacing: 0px;
   color: #fff;
@@ -748,15 +753,15 @@ li {
   font-size: 20px;
   line-height: 36px;
   color: #171a1f;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-.select-btn i {
+.select-btn img {
   font-size: 31px;
   transition: transform 0.3s linear;
 }
 
-.wrapper.active .select-btn i {
+.wrapper.active .select-btn img {
   transform: rotate(-180deg);
 }
 
@@ -805,7 +810,7 @@ li {
   font-size: 20px;
   line-height: 36px;
   color: #171a1f;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .options li:hover,
@@ -818,7 +823,7 @@ label {
   font-size: 20px;
   line-height: 36px;
   color: #171a1f;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -828,7 +833,7 @@ input {
   font-size: 20px;
   line-height: 36px;
   color: #171a1f;
-  font-weight: 500;
+  font-weight: 400;
   padding: 26px;
   width: 100%;
   max-width: 746px;
@@ -843,7 +848,7 @@ textarea {
   font-size: 20px;
   line-height: 36px;
   color: #171a1f;
-  font-weight: 500;
+  font-weight: 400;
   padding: 26px;
   width: 100%;
   max-width: 746px;

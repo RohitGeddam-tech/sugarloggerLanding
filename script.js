@@ -24,10 +24,8 @@ function showTextArea() {
   // console.info(selectBtn.firstElementChild.innerText);
   if (selectBtn.firstElementChild.innerText === "Other (let us know!)") {
     textArea.classList.add("active");
-    // console.info("true");
   } else {
     textArea.classList.remove("active");
-    // console.info("false");
   }
 }
 showTextArea();
@@ -90,6 +88,7 @@ white.addEventListener("click", () => {
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const fullName = document.getElementById("name");
+const msg = document.getElementById("msg");
 const emailError = document.getElementById("emailError");
 const phoneError = document.getElementById("phoneError");
 const nameError = document.getElementById("nameError");
@@ -101,7 +100,59 @@ const submitBtn = (e) => {
   nameValidation();
   emailValidation();
   phoneValidation();
-  console.log(email.value, fullName.value, phone.value);
+  // console.log(email.value, fullName.value, phone.value);
+  mainError.innerHTML = "";
+  if (
+    nameValidation() &&
+    emailValidation() &&
+    phoneValidation() &&
+    selectBtn.firstElementChild.innerText !== "Other (let us know!)"
+  ) {
+    const data = {
+      name: fullName.value,
+      email: email.value,
+      mobile: phone.value,
+      description: selectBtn.firstElementChild.innerText,
+    };
+    fetchRequest(data);
+  }
+  if (
+    nameValidation() &&
+    emailValidation() &&
+    phoneValidation() &&
+    selectBtn.firstElementChild.innerText === "Other (let us know!)"
+  ) {
+    const data = {
+      name: fullName.value,
+      email: email.value,
+      mobile: phone.value,
+      description: `Other: ${msg.value}`,
+    };
+    fetchRequest(data);
+  }
+};
+
+const fetchRequest = (data) => {
+  // console.log(JSON.stringify(data));
+  var requestOptions = {
+    method: "POST",
+    headers: {
+      Accept: "application.json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  };
+  fetch("https://stagingapi.sugarlogger.com/contact_us", requestOptions).then(
+    (res) => {
+      if (res.status !== 200) {
+        mainError.innerHTML = "Please provide valid information";
+      } else {
+        mainError.innerHTML =
+          "Your details has been saved, We will contact you shortly";
+        mainError.style.color = "green";
+      }
+    }
+  );
 };
 
 submit.addEventListener("click", (e) => submitBtn(e));
